@@ -1,11 +1,11 @@
-package br.com.caelum.jdbc.teste;
+package br.com.caelum.agenda.teste;
 
 import java.util.Calendar;
 
-import br.com.caelum.jdbc.dao.ContatoDAO;
-import br.com.caelum.jdbc.dao.FuncionarioDAO;
-import br.com.caelum.jdbc.modelo.Contato;
-import br.com.caelum.jdbc.modelo.Funcionario;
+import br.com.caelum.agenda.dao.ContatoDAO;
+import br.com.caelum.agenda.dao.FuncionarioDAO;
+import br.com.caelum.agenda.modelo.Contato;
+import br.com.caelum.agenda.modelo.Funcionario;
 
 public class TestaInsere {
 
