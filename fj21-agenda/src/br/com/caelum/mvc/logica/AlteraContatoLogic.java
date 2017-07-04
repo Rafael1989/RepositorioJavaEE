@@ -1,5 +1,6 @@
 package br.com.caelum.mvc.logica;
 
+import java.sql.Connection;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -27,7 +28,9 @@ public class AlteraContatoLogic implements Logica{
 		dataNascimento.setTime(date);
 		contato.setDataNascimento(dataNascimento);
 		
-		ContatoDAO dao = new ContatoDAO();
+		Connection connection = (Connection) request.getAttribute("conexao");
+		
+		ContatoDAO dao = new ContatoDAO(connection);
 		if(id == 0){
 			dao.adiciona(contato);
 		}else{
